@@ -148,6 +148,23 @@ motivational-quotes-app/
     ├── urls.py
     └── tests.py
 ```
+## Adding new quotes
+### 1. To add new quotes, open:
+```
+notable_quotes/data/quotes.json
+```
+### Add new quote objects:
+```
+{
+    "quote": "Your new motivational quote",
+    "author": "Author Name"
+}
+```
+### 3. Run:
+```bash
+python manage.py load_quotes
+```
+- Existing quotes will be skipped automatically :)
 
 ## Licence
 - This project is for learning and development purposes.

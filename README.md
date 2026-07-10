@@ -87,3 +87,67 @@ Added: You were born an original, don't become a copy!
 Added: Life is like riding a bicycle. To keep your balance, you must keep moving.
 Skipped duplicate: Stay hungry, stay foolish.
 ```
+## 6. Running the Application
+- Start the Django development server:
+```bash
+python manage.py runserver
+```
+- Open:
+```
+http://127.0.0.1:8000/
+```
+
+# Django Admin (Optional)
+### Create an admin user:
+```bash
+python manage.py createsuperuser
+```
+### Start the server
+```bash
+python manage.py runserver
+```
+### Open:
+```
+http://127.0.0.1:8000/admin/
+```
+- You can add, edit, and delete quotes through the Django admin interface.
+
+# Project Structure
+```
+motivational-quotes-app/
+│
+├── manage.py
+├── db.sqlite3
+│
+├── quotes/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+│
+└── notable_quotes/
+    ├── migrations/
+    │   └── __init__.py
+    │
+    ├── management/
+    │   └── commands/
+    │       ├── __init__.py
+    │       └── load_quotes.py
+    │
+    ├── data/
+    │   └── quotes.json
+    │
+    ├── templates/
+    │   └── notable_quotes/
+    │
+    ├── admin.py
+    ├── apps.py
+    ├── models.py
+    ├── views.py
+    ├── urls.py
+    └── tests.py
+```
+
+## Licence
+- This project is for learning and development purposes.

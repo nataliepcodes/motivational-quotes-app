@@ -1,10 +1,10 @@
-# Quotes — Motivational Quotes Platform
+# Motivational Quotes Platform
 
 A Django-based web application for collecting, organising, and displaying motivational quotes and their authors.
 
 The project explores building a content-driven platform using Django, including database modelling, data import from JSON, Django Admin, search, and improving the user experience.
 
-Work in progress — currently being developed as part of my journey learning Python, Django, and web application development.
+Work in progress: currently being developed as part of my journey learning Python, Django, and web application development.
 
 ---
 
@@ -116,7 +116,7 @@ http://127.0.0.1:8000/admin/
 
 # Project Structure
 ```
-motivational-quotes-app/
+quotes_project/
 │
 ├── manage.py
 ├── db.sqlite3

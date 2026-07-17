@@ -3,24 +3,29 @@
 {% block title %}Quotes{% endblock %} 
 
 {% block content %}
-    <h1>Notable Quotes</h1>
-    
-    <div class="card-deck">
-    {% for quote in quotes %}
-        <div class="card p-3" style="width: 18rem;">
-            <blockquote class="blockquote mb-0 card-body">
-            <p>{{ quote.quote }}</p>
-            <footer class="blockquote-footer">
-                <small class="text-muted">
-                 <cite title="Author">{{ quote.author }}</cite>
-                </small>
-            </footer>
-            </blockquote>
-            <a href="#" class="btn btn-primary">View Author</a>
+    <div class="container d-flex flex-column align-items-center mt-5">
+        <h1 class="mb-5">Notable Quotes</h1>
+        
+        <div class="row">
+
+        {% for quote in quotes %}
+            <div class="col-4">
+            <div class="card p-3" style="width: 18rem;">
+                <blockquote class="blockquote mb-0 card-body">
+                <p>{{ quote.quote }}</p>
+                <footer class="blockquote-footer">
+                    <small class="text-muted">
+                    <cite title="Author">{{ quote.author }}</cite>
+                    </small>
+                </footer>
+                </blockquote>
+                <a href="#" class="btn btn-dark">View Author</a>
+            </div>
+            </div>
+        {% empty %}
+            <p>No quotes available.</p>
+        {% endfor %}
         </div>
-    {% empty %}
-        <p>No quotes available.</p>
-    {% endfor %}
     </div>
 
 {% endblock%}

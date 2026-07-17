@@ -5,13 +5,22 @@
 {% block content %}
     <h1>Notable Quotes</h1>
     
+    <div class="card-deck">
     {% for quote in quotes %}
-        <blockquote>
+        <div class="card p-3" style="width: 18rem;">
+            <blockquote class="blockquote mb-0 card-body">
             <p>{{ quote.quote }}</p>
-            <footer>- {{ quote.author }}</footer>
-        </blockquote>
+            <footer class="blockquote-footer">
+                <small class="text-muted">
+                 <cite title="Author">{{ quote.author }}</cite>
+                </small>
+            </footer>
+            </blockquote>
+            <a href="#" class="btn btn-primary">View Author</a>
+        </div>
     {% empty %}
         <p>No quotes available.</p>
     {% endfor %}
+    </div>
 
 {% endblock%}

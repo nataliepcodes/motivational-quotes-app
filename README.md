@@ -1,9 +1,10 @@
-# Motivational Quotes App
+# 💎 Quotes — Motivational Quotes Platform
 
-A Django web application for displaying and managing motivational quotes and their authors.
+A Django-based web application for collecting, organising, and displaying motivational quotes and their authors.
 
-The app stores quotes in a Django database and includes a custom management command to import quote data from a JSON file while preventing duplicate entries.
+The project explores building a content-driven platform using Django, including database modelling, data import from JSON, Django Admin, search, and improving the user experience.
 
+Work in progress — currently being developed as part of my journey learning Python, Django, and web application development.
 ---
 
 ## Features

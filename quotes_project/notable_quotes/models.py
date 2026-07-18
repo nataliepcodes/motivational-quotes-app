@@ -14,10 +14,8 @@ class Quote(models.Model):
     quote = models.TextField(unique=True)
 
     # Related name helps to retrieve all data (e.g. author.quotes.all() without using quote_set.all()
-    author = models.CharField(max_length=100)
-    author_temp = models.ForeignKey(
+    author = models.ForeignKey(
         Author,
-        null=True,
         on_delete=models.CASCADE,
         related_name="quotes"
     )

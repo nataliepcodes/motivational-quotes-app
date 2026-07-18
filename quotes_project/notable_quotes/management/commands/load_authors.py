@@ -13,7 +13,7 @@ class Command(BaseCommand):
         for item in authors:
             
             author, created = Author.objects.get_or_create(
-                name=item["name"],
+                name=item["name"], # search is by the name, if the name doesn't exist, the new entry will be created
                 defaults={
                      "born": item["born"],
                      "country": item["country"],

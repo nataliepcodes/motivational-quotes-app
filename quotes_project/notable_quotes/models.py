@@ -6,3 +6,14 @@ class Quote(models.Model):
 
     def __str__(self):
         return f'"{self.quote}" - {self.author}'
+    
+
+class Author(models.Model):
+    name = models.CharField(max_length=100)
+    born = models.IntegerField()
+    country = models.CharField(max_length=100)
+    famous_for = models.TextField()
+    quote = models.TextField(unique=True)
+
+    def __str__(self):
+        return self.name

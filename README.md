@@ -10,13 +10,7 @@ Work in progress: currently being developed as part of my journey learning Pytho
 
 ## Features
 
-- Django-based web application
-- Quote model with quote text and author fields
-- SQLite database support
-- Import quotes from JSON data
-- Custom Django management command
-- Duplicate quote prevention using `get_or_create()`
-- Django admin support for managing quotes
+Project development and latest features are described within the [CHANGE LOG](https://github.com/nataliepcodes/motivational-quotes-app/blob/main/CHANGELOG/CHANGELOG.md)
 
 ---
 

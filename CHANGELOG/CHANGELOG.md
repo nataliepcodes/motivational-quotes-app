@@ -1,4 +1,4 @@
-# Changelog
+# Change Log
 
 ## Version-0.1 | Foundation |  10 July 2026
 
@@ -33,7 +33,13 @@ Changed:
 
 <img src="v-0.2/quotes-cards.png" alt="quotes list" style="display: inline-block; height: auto; width: auto; vertical-align: text-bottom; margin: 0 5px;" />
 
-## Version-0.3 - WORK IN PROGRESS
+## Version-0.3 | Author Profiles | 19 July 2026
+
+### Author Profile Views
+
+Added dedicated author profile pages displaying biographical information and a list of all quotes associated with each author.
+
+This feature demonstrates Django model relationships, reverse lookups using `related_name`, and detail views for related objects.
 
 ### Database Design Notes
 

@@ -32,3 +32,11 @@ Changed:
 - Improved readability and visual presentation
 
 <img src="v-0.2/quotes-cards.png" alt="quotes list" style="display: inline-block; height: auto; width: auto; vertical-align: text-bottom; margin: 0 5px;" />
+
+## Version-0.3 - Work in progress
+
+### Database Design Notes
+
+Version 0.2 introduced an Author model and changed Quote.author from text to a ForeignKey relationship.
+
+This required separating author data from quote data and importing related objects before importing quotes.

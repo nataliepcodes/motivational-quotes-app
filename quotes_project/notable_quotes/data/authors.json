@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Coco Chanel",
+    "born": "1883",
+    "country": "France",
+    "famous_for": "Fashion designer. Founder of the Chanel fashion house"
+  },
+  {
+    "name": "Marie Curie",
+    "born": "1867",
+    "country": "Poland",
+    "famous_for": "Pioneering research on radioactivity. First person to win two Nobel Prizes"
+  },
+  {
+    "name": "Mahatma Gandhi",
+    "born": "1869",
+    "country": "India",
+    "famous_for": "Leader of India's nonviolent independence movement"
+  },
+  {
+    "name": "Steve Jobs",
+    "born": "1955",
+    "country": "United States",
+    "famous_for": "Co-founder of Apple Inc. and pioneer of personal computing"
+  },
+  {
+    "name": "Theodore Roosevelt",
+    "born": "1858",
+    "country": "United States",
+    "famous_for": "26th President of the United States"
+  },
+  {
+    "name": "Nelson Mandela",
+    "born": "1918",
+    "country": "South Africa",
+    "famous_for": "Anti-apartheid revolutionary and first Black President of South Africa"
+  },
+  {
+    "name": "John F. Kennedy",
+    "born": "1917",
+    "country": "United States",
+    "famous_for": "35th President of the United States. Had a Moon landing vision"
+  },
+  {
+    "name": "Henry Ford",
+    "born": "1863",
+    "country": "United States",
+    "famous_for": "Founder of Ford Motor Company. Assembly line manufacturing"
+  },
+  {
+    "name": "Eleanor Roosevelt",
+    "born": "1884",
+    "country": "United States",
+    "famous_for": "Former First Lady. Human rights advocate and diplomat"
+  },
+  {
+    "name": "Elon Musk",
+    "born": "1971",
+    "country": "South Africa",
+    "famous_for": "CEO of Tesla and SpaceX. Entrepreneur"
+  },
+  {
+    "name": "Malala Yousafzai",
+    "born": "1997",
+    "country": "Pakistan",
+    "famous_for": "Education activist and youngest Nobel Peace Prize laureate"
+  },
+  {
+    "name": "Ursula Burns",
+    "born": "1958",
+    "country": "United States",
+    "famous_for": "Former CEO of Xerox. First Black woman to lead a Fortune 500 company"
+  },
+  {
+    "name": "Lauren Mosenthal",
+    "born": null,
+    "country": "United States",
+    "famous_for": "CTO at Glassbreakers"
+  },
+  {
+    "name": "Reshma Saujani",
+    "born": "1975",
+    "country": "United States",
+    "famous_for": "Founder of Girls Who Code and advocate for women in technology"
+  },
+  {
+    "name": "Albert Einstein",
+    "born": "1879",
+    "country": "Germany",
+    "famous_for": "Theoretical physicist. Developed the theory of relativity"
+  }
+]

@@ -14,9 +14,11 @@ class Command(BaseCommand):
             
             author, created = Author.objects.get_or_create(
                 name=item["name"],
-                born=item["born"],
-                country=item["country"],
-                famous_for=item["famous_for"],
+                defaults={
+                     "born": item["born"],
+                     "country": item["country"],
+                     "famous_for": item["famous_for"],
+                },
             )
 
             if created:

@@ -17,6 +17,7 @@ class Quote(models.Model):
     author = models.CharField(max_length=100)
     author_temp = models.ForeignKey(
         Author,
+        null=True,
         on_delete=models.CASCADE,
         related_name="quotes"
     )

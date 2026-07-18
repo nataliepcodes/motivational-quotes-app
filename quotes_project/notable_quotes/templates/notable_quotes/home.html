@@ -19,7 +19,7 @@
                         </small>
                     </footer>
                     </blockquote>
-                    <a href="#" class="btn btn-dark">View Author</a>
+                    <a href="{% url 'author_detail' quote.author.id %}" class="btn btn-dark">View Author</a>
                 </div>
             </div>
         {% empty %}

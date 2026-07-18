@@ -5,7 +5,6 @@ class Author(models.Model):
     born = models.IntegerField()
     country = models.CharField(max_length=100)
     famous_for = models.TextField()
-    quote = models.TextField(unique=True)
 
     def __str__(self):
         return self.name

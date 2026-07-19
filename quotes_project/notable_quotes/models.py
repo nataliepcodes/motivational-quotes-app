@@ -29,7 +29,7 @@ class Quote(models.Model):
 
     category = models.ManyToManyField(
         Category,
-        related_name="queries"
+        related_name="quotes"
     )
 
     def __str__(self):

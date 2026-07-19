@@ -27,5 +27,10 @@ class Quote(models.Model):
         related_name="quotes"
     )
 
+    category = models.ManyToManyField(
+        Category,
+        related_name="queries"
+    )
+
     def __str__(self):
         return f'"{self.quote}" - {self.author}'

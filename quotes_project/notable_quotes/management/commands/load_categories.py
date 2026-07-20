@@ -13,7 +13,7 @@ class Command(BaseCommand):
 
         for item in categories:
             category, created = Category.objects.get_or_create(
-                name=item["category"]
+                name=item
             )
 
             if created:

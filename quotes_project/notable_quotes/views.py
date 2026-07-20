@@ -16,6 +16,6 @@ def author_details(request, author_id):
 
 
 def display_categories(request, category_name):
-    category = get_object_or_404(Category, id=category_name)
+    category = get_object_or_404(Category, name=category_name)
 
     return render(request, "notable_quotes/category.html", {"category": category})

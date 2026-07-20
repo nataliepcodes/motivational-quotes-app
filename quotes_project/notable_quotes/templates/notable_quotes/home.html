@@ -19,6 +19,9 @@
                         </small>
                     </footer>
                     </blockquote>
+                    {% for category in quote.category.all %}
+                        <h4>{{ category.name }}</h4>
+                    {% endfor %}
                     <a href="{% url 'author_detail' quote.author.id %}" class="btn btn-dark">View Author</a>
                 </div>
             </div>

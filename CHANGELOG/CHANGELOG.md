@@ -33,6 +33,7 @@ Changed:
 
 <img src="v-0.2/quotes-cards.png" alt="quotes list" style="display: inline-block; height: auto; width: auto; vertical-align: text-bottom; margin: 0 5px;" />
 
+
 ## Version-0.3 | Author Profiles | 18 July 2026
 
 ### Author Profile Views
@@ -49,7 +50,8 @@ This required separating author data from quote data and importing related objec
 
 <img src="v-0.3/author_profile_example.png" alt="quotes list" style="display: inline-block; height: auto; width: auto; vertical-align: text-bottom; margin: 0 5px;" />
 
-## Version 0.4 — Categories and Quote Organisation | 20 July 2026
+
+## Version 0.4 | Categories and Quote Organisation | 20 July 2026
 
 Version-0.4 introduced categories to allow quotes to be grouped and filtered by themes.
 
@@ -64,8 +66,7 @@ Changes:
 ### Database Design Notes
 
 Categories use a ManyToMany relationship because:
-- A quote can belong to multiple categories
-- A category can contain multiple quotes
+- A quote can belong to multiple categories and a category can contain multiple quotes
 
 Django manages the ManyToMany relationship through the automatic join table: notable_quotes_quote_category
 

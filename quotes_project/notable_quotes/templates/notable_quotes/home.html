@@ -10,7 +10,7 @@
 
         {% for quote in quotes %}
             <div class="col-3">
-                <div class="card p-3 mt-3 mb-5" style="width: 18rem; height:22rem;">
+                <div class="card p-3 mt-3 mb-5" style="width: 18rem; height:21rem;">
                     <blockquote class="blockquote mb-0 card-body">
                     <p>{{ quote.quote }}</p>
                     <footer class="blockquote-footer">
@@ -19,16 +19,15 @@
                         </small>
                     </footer>
                     </blockquote>
-                    {% for category in quote.category.all %}
-                        <h4>{{ category.name }}</h4>
-                    {% endfor %}
                     <a href="{% url 'author_detail' quote.author.id %}" class="btn btn-dark">View Author</a>
                 </div>
             </div>
         {% empty %}
             <p>No quotes available.</p>
         {% endfor %}
+
         </div>
+
     </div>
 
 {% endblock%}

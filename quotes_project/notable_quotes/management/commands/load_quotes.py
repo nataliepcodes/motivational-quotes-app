@@ -1,7 +1,7 @@
 import json
 from django.core.management.base import BaseCommand
 from django.conf import settings
-from notable_quotes.models import Quote, Category
+from notable_quotes.models import Quote, Category, Author
 
 # Command to help load quotes onto the database
 # To run it: 
@@ -29,10 +29,16 @@ class Command(BaseCommand):
         # - quote: the Quote object
         # - created: True if a new record was created, False if it already existed
         for item in quotes:
+
+            author = Author.objects.get(
+                name=item["author"]
+            )
             
             quote, created = Quote.objects.get_or_create(
                 quote=item["quote"],
-                author=item["author"],
+                defaults={
+                    "author": author
+                }
             )
 
             #  "categories": ["Resilience", "Perseverance", "Courage"]    

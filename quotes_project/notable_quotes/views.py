@@ -16,6 +16,9 @@ def author_details(request, author_id):
 
 
 def display_categories(request, category_name):
-    category = get_object_or_404(Category, name=category_name)
+    # name__iexact ignores the case (lower/Upper/UPPER) ! could Improve to slug=slug !
+    # without a slug: category/Personal%20Growth/
+    # with a slug could be: category/personal-growth
+    category = get_object_or_404(Category, name__iexact=category_name) 
 
     return render(request, "notable_quotes/category.html", {"category": category})

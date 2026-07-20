@@ -1,7 +1,7 @@
 import json
 from django.core.management.base import BaseCommand
 from django.conf import settings
-from notable_quotes.models import Quote
+from notable_quotes.models import Quote, Category
 
 # Command to help load quotes onto the database
 # To run it: 
@@ -34,6 +34,11 @@ class Command(BaseCommand):
                 quote=item["quote"],
                 author=item["author"],
             )
+
+            #  "categories": ["Resilience", "Perseverance", "Courage"]    
+            for category_name in item["categories"]:
+                category = Category.objects.get(name=category_name)
+                quote.category.add(category) # added to the joining table >> notable_quotes_quote_category
 
             if created:
                 self.stdout.write(

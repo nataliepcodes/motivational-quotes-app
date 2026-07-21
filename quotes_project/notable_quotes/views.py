@@ -8,9 +8,9 @@ def home(request):
 
     day = date.today().timetuple().tm_yday
 
-    daily_quote = quotes[date % quotes.count()] # go through all current quotes then start again
+    daily_quote = quotes[day % quotes.count()] # go through all current quotes then start again
 
-    today = day.today()
+    today = date.today()
 
     return render(request, "notable_quotes/home.html", 
                   {"daily_quote": daily_quote,

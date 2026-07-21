@@ -8,6 +8,13 @@ def home(request):
     return render(request, "notable_quotes/home.html", {"quotes": quotes})
 
 
+def all_quotes(request):
+    # Retrieve all quotes for the database - Quote.objects.all()
+    quotes = Quote.objects.all()
+
+    return render(request, "notable_quotes/all_quotes.html", {"quotes": quotes})
+
+
 def author_details(request, author_id):
     # getting an author object by id
     author = get_object_or_404(Author, id=author_id)

@@ -1,11 +1,22 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Quote, Author, Category
+from datetime import date
 
 def home(request):
     # Retrieve all quotes for the database - Quote.objects.all()
     quotes = Quote.objects.all()
 
-    return render(request, "notable_quotes/home.html", {"quotes": quotes})
+    day = date.today().timetuple().tm_yday
+
+    daily_quote = quotes[date % quotes.count()] # go through all current quotes then start again
+
+    today = day.today()
+
+    return render(request, "notable_quotes/home.html", 
+                  {"daily_quote": daily_quote,
+                    "today": today,
+                   }
+    )
 
 
 def all_quotes(request):

@@ -5,8 +5,12 @@ db.sqlite3
 __pycache__/
 __init__.py
 
-# Virtual environment
+# Virtual environments
 env/
+.env
 
 # Django settings 
 settings.py
+
+# IDE
+.vscode

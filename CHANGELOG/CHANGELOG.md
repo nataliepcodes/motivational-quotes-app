@@ -75,3 +75,32 @@ Django manages the ManyToMany relationship through the automatic join table: not
 <img src="v-0.4/learning.png" alt="quotes list" style="display: inline-block; height: auto; width: auto; vertical-align: text-bottom; margin: 0 5px;" />
 
 <img src="v-0.4/perseverance.png" alt="quotes list" style="display: inline-block; height: auto; width: auto; vertical-align: text-bottom; margin: 0 5px;" />
+
+## Version 1.0 | User Interface and Deployment | 22 July 2026
+
+### Added
+- Responsive Bootstrap navigation bar
+- Daily Quote feature with current/today's date
+- Dedicated All Quotes page
+- Category dropdown navigation
+- Public deployment to PythonAnywhere
+
+### Changed
+- Home page redesigned to feature the daily quote
+- Quote collection moved to its own page
+- Improved responsive layout using Bootstrap
+
+### Security
+- Moved Django SECRET_KEY to environment variables via python-dotenv
+
+### Deployment
+- Configured PythonAnywhere hosting
+- Configured static files for production
+
+<img src="v-1.0/daily_quote.png" alt="quotes list" style="display: inline-block; height: auto; width: auto; vertical-align: text-bottom; margin: 0 5px;" />
+
+<img src="v-1.0/categories.png" alt="quotes list" style="display: inline-block; height: auto; width: auto; vertical-align: text-bottom; margin: 0 5px;" />
+
+<img src="v-1.0/all_quotes.png" alt="quotes list" style="display: inline-block; height: auto; width: auto; vertical-align: text-bottom; margin: 0 5px;" />
+
+<img src="v-1.0/author_profile.png" alt="quotes list" style="display: inline-block; height: auto; width: auto; vertical-align: text-bottom; margin: 0 5px;" />

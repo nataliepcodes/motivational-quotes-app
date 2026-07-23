@@ -1,173 +1,22 @@
-# Motivational Quotes Platform
-
-A Django-based web application for collecting, organising, and displaying motivational quotes and their authors.
-
-The project explores building a content-driven platform using Django, including database modelling, data import from JSON, Django Admin, search, and improving the user experience.
-
-Work in progress: currently being developed as part of my journey learning Python, Django, and web application development.
-
----
-
-## Features
-
-Project development and latest features are described within the [CHANGE LOG](https://github.com/nataliepcodes/motivational-quotes-app/blob/main/CHANGELOG/CHANGELOG.md)
-
----
-
-## Deployed website link
-
-https://nataliepcodes.eu.pythonanywhere.com/
-
----
-
-
-## Tech Stack
-
-- Python 3
-- Django
-- SQLite
-- JSON data import
-
----
-
-# Installation
-
-## 1. Clone the repository
-
-```bash
-git clone <repository-url>
-cd motivational-quotes-app
-```
-## 2. Create and activate a virtual environment
-
-```bash
-python3 -m venv env
-```
-- macOS/Linux
-```bash
-source env/bin/activate
-```
-- Windows
-```bash
-env\Scripts\activate
-```
-## 3. Install Dependencies
-```bash
-pip install Django
-pip freeze > requirements.txt
-```
-## 4. Setup Database
-```bash
-python manage.py migrate
-```
-- This creates the database tables required by Django and the notable_quotes app
-
-## 5. Loading Quotes into the Database
-- Quotes are stored in
-```
-notable_quotes/
-└── data/
-    └── quotes.json
-```
-- The project includes a custom Django management command:
-```
-notable_quotes/
-└── management/
-    └── commands/
-        └── load_quotes.py
-```
-```bash
-python manage.py load_quotes
-```
-- The command:
-    - Reads quotes from quotes.json
-    - Creates database records
-    - Skips quotes that already exist
-    - Prevents duplicate entries using get_or_create()
-- Example output:
-```
-Added: You were born an original, don't become a copy!
-Added: Life is like riding a bicycle. To keep your balance, you must keep moving.
-Skipped duplicate: Stay hungry, stay foolish.
-```
-## 6. Running the Application
-- Start the Django development server:
-```bash
-python manage.py runserver
-```
-- Open:
-```
-http://127.0.0.1:8000/
-```
-
-# Django Admin (Optional)
-### Create an admin user:
-```bash
-python manage.py createsuperuser
-```
-### Start the server
-```bash
-python manage.py runserver
-```
-### Open:
-```
-http://127.0.0.1:8000/admin/
-```
-- You can add, edit, and delete quotes through the Django admin interface.
-
-# Project Structure
-```
-quotes_project/
-│
-├── manage.py
-├── db.sqlite3
-│
-├── quotes/
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── asgi.py
-│   └── wsgi.py
-│
-└── notable_quotes/
-    ├── migrations/
-    │   └── __init__.py
-    │
-    ├── management/
-    │   └── commands/
-    │       ├── __init__.py
-    │       └── load_quotes.py
-    │
-    ├── data/
-    │   └── quotes.json
-    │
-    ├── templates/
-    │   └── notable_quotes/
-    │
-    ├── admin.py
-    ├── apps.py
-    ├── models.py
-    ├── views.py
-    ├── urls.py
-    └── tests.py
-```
-## Adding new quotes
-### 1. To add new quotes, open:
-```
-notable_quotes/data/quotes.json
-```
-### Add new quote objects:
-```
-{
-    "quote": "Your new motivational quote",
-    "author": "Author Name"
-}
-```
-### 3. Run:
-```bash
-python manage.py load_quotes
-```
-- Existing quotes will be skipped automatically :)
+# QUȮTES | Motivational Quotes Platform 
+- Quotes platform that displays a daily quote, quote author's profile, filters quotes by categories and provides a list of all quotes
+- Tech stack: Python 3, Django, SQLite database design, JSON data import, Bootstrap
+- Topics covered:
+  - Project structure set up
+  - Creating models
+  - Database design
+  - Foreign key, one-to-many and many-to-many data relationships
+  - Building views
+  - Building URL patterns
+  - Administration site set up with models
+  - Importing data via JSON and creating custom data loading commands
+  - Designing responsive user interface, adding site navigation
+  - Secret key management
+  - Project deployment through PythonAnywhere
+- [Project repository](https://github.com/nataliepcodes/motivational-quotes-app)
+- [Change log](https://github.com/nataliepcodes/motivational-quotes-app/blob/main/CHANGELOG/CHANGELOG.md)
+- [Website](https://nataliepcodes.eu.pythonanywhere.com/)
+- STATUS: version-1.0
 
 ## Licence
-- This project is for learning and development purposes.
+- This project is for learning and development purposes
